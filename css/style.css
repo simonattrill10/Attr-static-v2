@@ -1,0 +1,387 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    padding-top: 55px;
+}
+
+.container{
+    width: 66%;
+    margin: 0 auto;
+
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 38, 80);;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 5px 0px 10px rgb(0, 0, 0);
+}
+
+.nav-logo{
+    width: 250px;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.navbar-links li a:hover {
+    color: rgb(255, 145, 0);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+h1{
+    font-size: 3.5em;
+    text-shadow: 2px 2px #0000002f;;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.intro{
+    display: flex;
+    margin: 40px 90px;
+    text-align: center;
+}
+
+.intro-text{
+    padding: 20px;
+    max-width: 50%;
+}
+
+.intro-text h3{
+    padding-bottom: 40px;
+}
+
+.intro-text p{
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+
+.intro-pic{
+    width: 50%;
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+.button{
+    text-decoration: none;
+    padding: 10px 60px ;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 145, 0);
+    border-radius: 5px;
+}
+
+
+
+/*jhf*/
+
+.slider{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid black;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*what we do*/
+
+
+.what-we-do{
+    background-color: rgb(12, 38, 80);
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.what-we-do-content{
+    display: flex;
+}
+
+.what-we-do-sections{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.what-we-do-sections h3{
+    color: rgb(255, 145, 0);
+}
+
+
+
+/*about us*/
+
+
+.about-us{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgb(12, 38, 80);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px black;
+}
+
+.about-us-picture{
+    width: 50%;  
+    object-fit: contain;
+}
+
+.about-us-text{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.about-us-text h2{
+    color: rgb(255, 145, 0);
+}
+
+/*projects*/
+
+.projects-pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+
+.projects-pictures img{
+    max-width: 30%;
+    margin: 10px;
+    border: 5px solid black;
+}
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*contact*/
+
+.contact{
+    margin: 50px 0;
+    margin-bottom: 60px;
+}
+
+.contact-wrap{
+    margin: 0 auto;
+    padding: 20px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer{
+    background-color: rgb(12, 38, 80);
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-logo{
+    width: 250px;
+}
+
+.footer-ip{
+    width: 55px;
+}
+
+
+.anchor {       
+    scroll-margin-top: 70px; 
+ }
+
+@media (max-width: 1000px) {
+
+    .container{
+        width: 92%;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{ 
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding:  .5rem 1rem;
+        
+    }
+
+    .navbar-links.active{
+        display: flex;
+       
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    .intro{
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .slider{
+        min-width: 100%;
+    }
+
+    .intro-text{
+        min-width: 100%;
+    }
+
+    .intro-text h3{
+        padding-bottom: 30px;
+    }
+
+    .what-we-do-content, .about-us{
+        flex-direction: column;
+    }
+
+    .what-we-do-sections{
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .about-us-picture{
+        width: 100%;
+    }
+
+    .projects-pictures img{
+        max-width: 45%;
+    }
+}
