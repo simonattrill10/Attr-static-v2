@@ -5,9 +5,9 @@
     font-family: 'Poppins',sans-serif;
 }
 
-body{
+/* body{
     padding-top: 55px;
-}
+} */
 
 .container{
     width: 66%;
@@ -21,10 +21,11 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: rgb(12, 38, 80);;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     top: 0;
     box-shadow: 5px 0px 10px rgb(0, 0, 0);
+    z-index: 99;
 }
 
 .nav-logo{
@@ -39,7 +40,6 @@ body{
 
 .navbar-links li{
     list-style: none;
-    
 }
 
 .navbar-links li a{
@@ -78,11 +78,12 @@ body{
 
 h1{
     font-size: 3.5em;
-    text-shadow: 2px 2px #0000002f;;
+    text-shadow: 2px 2px #0000002f;
 }
 
 h2{
     font-size: 2em;
+    text-shadow: 2px 2px #0000002f;
 }
 
 h3{
@@ -166,42 +167,13 @@ img.displaySlide{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*what we do*/
 
 
 .what-we-do{
     background-color: rgb(12, 38, 80);
     color: rgb(255, 255, 255);
-    
-
+    box-shadow: 5px 5px 10px black;
 }
 
 .what-we-do-content{
@@ -215,6 +187,7 @@ img.displaySlide{
 
 .what-we-do-sections h3{
     color: rgb(255, 145, 0);
+    text-shadow: 2px 2px #00000083;
 }
 
 
@@ -246,6 +219,7 @@ img.displaySlide{
 
 .about-us-text h2{
     color: rgb(255, 145, 0);
+    text-shadow: 2px 2px #00000083;
 }
 
 /*projects*/
